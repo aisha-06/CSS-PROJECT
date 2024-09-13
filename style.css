@@ -103,10 +103,12 @@ body
       background-repeat: repeat;  
     }
 
-    .header-item-text
-    {  
-        padding: 10px;
-       
+    
+    .logo
+    {
+      margin-top: -20px;
+      height: 25vh;
+      width: 50vh;
     }
     .header-text
     {
