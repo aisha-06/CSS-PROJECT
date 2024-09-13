@@ -1,7 +1,14 @@
 body
 {
   background-color: rgb(69 46 54);
+  color: white;
 }
+.logo
+    {
+      margin-top: -20px;
+      height: 25vh;
+      width: 50vh;
+    }
     
 .mode-btn
 {
@@ -174,4 +181,124 @@ body
         text-decoration-color: rgb(247, 201, 139);
         text-decoration-thickness: 3px;
     }
+
+
+
+   
+    /* .heading1{
+        text-align: center;
+        text-transform: capitalize;
+        margin-top: 80px;
+        font-size: 28px;
+    } */
+    
+    .div1{
+        background-color:#bc9864;
+        width: 75px;
+        height: 70px;
+        border-radius: 50%;
+    }
+    .div2{
+        background-color:#bc9864;
+        width: 75px;
+        height: 70px;
+        border-radius: 50%;
+    }
+    .div3{
+        background-color:#bc9864;
+        width: 75px;
+        height: 70px;
+        border-radius: 50%;
+    }
+    .flex-container{
+        display: flex;
+        justify-content: center;
+        margin-top: 70px;
+        gap:260px
+    }
+    .flex-container2{
+        display: flex;
+        justify-content: center;
+        gap:310px;
+        font-size: 25px;
+        margin-top: -49px;
+        color: black;
+    }
+    .Address h3{
+        color: #bc9864;
+        font-family: "Playfair Display", serif;
+        font-weight: 300;
+    }
+    .Phoneno h3{
+        color: #bc9864;
+      font-family: "Playfair Display", serif;
+      font-weight: 300;
+    }
+    .emailid h3{
+        color: #bc9864;
+        font-family: "Playfair Display", serif;
+       font-weight: 300;   
+    }
+    .flex-container3{
+        display: flex;
+        justify-content: center;
+        gap:299px;
+        margin-top: 20px;
+    }
+    .Address{
+        position: absolute;
+        margin-left: -600px;
+        font-family:"Playfair Display", serif ;
+    }
+    .Phoneno{
+        position: absolute;
+        margin-left:70px;
+    }
+    .emailid{
+        position: absolute;
+        margin-left: 850px;
+       font-family: "Playfair Display", serif;
+    }
+    .get-in-touch{
+        font-size: 18px;
+        text-transform: capitalize;
+        margin-top: 200px;
+        text-align: center;
+    }
+    .form{
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    }
+    .inputs,.send-button,.textarea{
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: none;
+        height: 30px;
+    }
+    .inputs,.textarea{
+        background-color: #555;
+        color: white;
+    }
+    .send-button{
+        background-color: #bc9864;
+        color:white;
+        height: 75px;
+        font-size: medium;
+        border-radius: 15px;
+    }
+    .send-button:hover{
+        background-color:#E0A75E;
+    }
+
+   #name, #email, #password , #confirmpassword,#phonenumber,#subject,#message
+  {
+        height: 50px;
+        border-radius: 15px;
+    }
+    
+    
     
