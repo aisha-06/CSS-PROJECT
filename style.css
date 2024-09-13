@@ -1,0 +1,849 @@
+body
+{
+  background-color: black;
+}
+    
+.mode-btn
+{
+  background-color: black;
+  color: white;
+  border-color: white;
+  width: 50px;
+  margin: 10px 25px;
+
+ 
+}
+
+
+    .header-flex
+    {
+        display: flex;
+        margin: 10px;
+        padding: 15px;
+        justify-content: space-between;
+    }
+    .header-item-social
+    {
+        display: flex;
+        color: white;   
+    }
+    .fb
+    {
+        margin: 10px;
+    }
+    .fb-btn
+    {
+        color: white;
+        border-color: black;
+        background-color: black;
+        border: none;
+       
+ 
+    }
+    .fb-btn:hover
+    {
+       color:#E5BF4A ;
+       
+       -webkit-transform:scale(-1);
+       transform:scaleX(-1);
+    
+          
+    }
+    .insta
+    {
+        margin: 10px;
+    }
+    .ig-btn
+    {
+        color: white;
+        border-color: black;
+        background-color: black;
+        border: none; 
+    }
+    .ig-btn:hover
+    {
+        color:#E5BF4A ;
+        -webkit-transform:scale(-1);
+        transform:scaleX(-1);
+    }
+
+    .X
+    {
+      margin: 10px;
+    }
+    .x-btn
+    {
+        color: white;
+        border-color: black;
+        background-color: black;
+        border: none;
+    }
+    .x-btn:hover
+    {
+        color:#E5BF4A ;
+        -webkit-transform:scale(-1);
+        transform:scaleX(-1); 
+    }
+    .stick-header
+    {
+      position: sticky; 
+      top: 0%;
+      z-index: 1;
+
+    }
+    .bg-cupcake
+    { 
+      background-size: contain;
+      background-repeat: repeat;  
+    }
+
+    .header-item-text
+    {  
+        padding: 10px;
+       
+    }
+    .header-text
+    {
+        font-family: "Jost", sans-serif ,cursive;
+        font-style:italic;
+        color:#E5BF4A;        
+    }
+    
+    .btn-call
+   {
+     border-color: #E5BF4A;
+     background-color: black;
+     color: #E5BF4A;
+     font-family: "Jost",sans-serif;
+   } 
+    .btn-call:hover
+   {
+    color: white;
+    background-color:#E5BF4A;
+    }
+    .btn-mode-li
+    {
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 20px;
+      
+    }
+
+    
+  .header2-flex
+    {
+        display: flex;
+        gap: 40px;
+        color: white;
+        justify-content: center;
+        position: sticky;
+    }
+    .bg-cup-text    
+    {
+        color:white;
+        position: absolute;
+        top: 350px;
+        margin-left: 90px;
+        padding-right: 50px;
+        font-size: 40px;
+        font-family:"Poiret One", cursive;
+        font-weight:400;
+    }
+
+    .order-btn-div
+    {
+        position:absolute;
+        top: 630px;
+        
+        
+    }
+    
+    .order-btn
+    {
+    
+        color:black;
+        background-color:#E5BF4A;
+        border-color: #E5BF4A;
+        font-size:large;
+        padding-top: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 20px;
+        margin-left: 100px;
+        font-family: Arial;
+
+    }
+    .order-btn:hover
+    {
+      color: #E5BF4A;
+      border-color: #E5BF4A;
+      background-color: black;
+    }
+    .schilers-text
+    {
+        color: white;
+        font-family: "Poiret One", cursive;
+        font-size: 90x;
+        font-weight: 400;
+        
+        margin-left: 500px;
+    }
+    .flex2-txt-img
+    {
+        color: white;
+        display: flex;
+        padding: 30px;
+        margin: 60px;
+        justify-content: center;
+    }
+    .schilers-text-h2
+    {
+        font-family: "Poiret One", cursive;
+        font-size: 20x;
+        font-weight: 400;
+        color: #E5BF4A;
+    }
+    .f2-text
+    {
+        font-size: 20px;
+        font-weight: 400;
+        font-family: "Poiret One", cursive;
+        
+    }
+    
+    .order-cake-flex3
+    {
+        display: flex;
+        justify-content: space-between;
+        margin: 50px;
+        
+    }
+    .cake-cashmere-text
+    {
+        color: white;
+        font-family: "Poiret One", cursive;
+        font-size: 25px;
+        font-weight: 400;
+
+    }
+    .cake-cashmere-price
+    {
+        color: #E5BF4A;
+        font-family: "Jost",sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+
+    }
+
+    .cashmere-btn 
+    {
+      position: absolute;
+      left: 59px;
+      background-color: #E5BF4A;
+      top: 265%;
+      height: 41px;
+      width: 449px;
+      border-color: #E5BF4A;
+      visibility: hidden; 
+       cursor: pointer;
+       
+    }
+     .order-img-btn:hover .cashmere-btn
+    {
+      visibility: visible;
+      cursor: pointer;
+    }
+    .cake-delightful-text
+    {
+        color: white;
+        font-family: "Poiret One", cursive;
+        font-size: 25px;
+        font-weight: 400;
+        align-items: center;
+        justify-content: center;
+        margin-left: 15px;
+
+    }
+    .cake-delightful-price
+    {
+        color: #E5BF4A;
+        font-family: "Jost",sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        align-items: center;
+        justify-content: center;
+        margin-left: 15px;
+        
+
+    }
+.delightful-btn 
+{
+     position: absolute;
+     justify-content: center;
+    align-content: center;
+    top: 265%;
+    height: 40px;
+    background-color: #E5BF4A;
+   color: black;
+   width: 450px;
+   border-color:#E5BF4A;
+   visibility: hidden;
+   cursor: pointer;
+    
+ }
+ .order-img-btn:hover .delightful-btn
+ {
+   visibility: visible;
+   cursor: pointer;
+ }
+ .cake-suprise-text
+ {
+  color: white;
+  font-family: "Poiret One", cursive;
+  font-size: 25px;
+  font-weight: 400;
+  align-items:end ;
+  justify-content:end;
+  margin-left: 20px;
+
+}
+
+.cake-suprise-price
+{
+   color: #E5BF4A;
+   font-family: "Jost",sans-serif;
+   font-size: 20px;
+   font-weight: 400;
+   align-items:end ;
+   justify-content:end;
+   margin-left: 20px;
+
+}
+.suprise-btn
+{
+ position: absolute;
+  justify-content:end;
+  align-content:end;
+  height: 40px;
+  background-color: #E5BF4A;
+   color: black;
+   width: 450px;
+   border-color:#E5BF4A;
+   top: 265%;
+   visibility: hidden;
+   cursor: pointer;
+}
+.order-img-btn:hover .suprise-btn
+ {
+   visibility: visible;
+   cursor: pointer;
+ }
+  .play-icon
+  {
+    color:black;
+    position: absolute;
+    size: 900px;
+    justify-content: center;
+    align-items: center;
+    top: 2425px;
+    left: 760px;
+    width: 100px;
+  }
+  .icon-btn
+  {
+    position: absolute;
+    color:#E5BF4A;
+    background-color: #E5BF4A;
+    border-radius: 50%;
+    border-color: #E5BF4A;
+    width: 100px;
+    height: 100px;
+    top:2400px ;
+    justify-content: center;
+  }
+  .icon-btn:hover
+  {
+    background-color:lightyellow
+
+  }
+  .video-div
+  {
+    justify-content: center;
+  }
+  .food-lover-says-text
+  {
+    color: white;
+    font-family: "Poiret One", cursive;
+    font-size: 45px;
+    font-weight: 400;
+  }
+  .review-flex
+  {
+    display: flex;
+    justify-content: space-between;
+    border: 0.2px solid rgb(100, 95, 95);
+    border-left: none;
+    border-right: none;
+    margin: 100px;
+    padding: 10px;
+  }
+  .review1-star,.review2-star,.review3-star
+  {
+    display: flex;
+    color: #E5BF4A;
+    list-style: none; 
+  }
+  .para-review1
+  {
+    margin-right: 60px;
+  }
+  .para-review1,.para-review2,.para-review3
+  {
+   color: white;
+   font-family: "Poiret One", cursive;
+   font-size: 20px;
+   font-weight: 400;
+  
+  }
+  .review1
+  {
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid rgb(100, 95, 95);
+    border-left: none;
+    border-bottom: none;
+    border-top: none;
+  }
+  .review2
+  {
+    border: 1px solid rgb(100, 95, 95);
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    
+  }
+  .para-review2
+  {
+    justify-content: center;
+    margin-right: 90
+  }
+
+  .review2-star
+  {
+    margin-left: 10px;
+    justify-content: 20px;
+    margin-right: 120px;
+    margin-top: 40px;
+  }
+  .review3
+  {
+    margin: 10px;
+    padding: 10px;
+  }
+  .review3-star
+  {
+    margin-right: 110px;
+    justify-content: end;
+  }
+  .para-review3
+  {
+    justify-content: end;
+  }
+  .cust-name1,.cust-name2, .cust-name3
+  {
+    color:white;
+    font-family: "Poiret One", cursive;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .img-text-cust-div
+  {
+    display: flex
+  }
+  .cust-img-div
+  {
+    margin-top: 15px;
+  }
+
+  .cust-name-div
+  {
+    margin-left: 50px;
+    
+   
+  }
+  .blog-text
+  {
+    color:white;
+    font-family: "Poiret One", cursive;
+     font-size: 40px;
+     font-weight: 400;
+     margin-left: 100px;
+  }
+  .blog-div
+  {
+    display: flex;
+    justify-content: space-between;
+  }
+  .blog-btn
+  {
+    font-family: "Jost",sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+  background-color: #E5BF4A;
+    border-color:#E5BF4A; 
+    margin-right: 100px;
+  }
+
+  .blog-btn:hover
+  {
+    color: #E5BF4A;
+    border-color: #E5BF4A;
+    background-color: black;
+  }
+
+.recipe-flex
+{
+  display: flex;
+  justify-content: space-between;
+
+}
+.recipe-para
+{
+  color: white;
+  font-family: "Jost",sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  margin: 15px;
+}
+.h3-recipe
+{
+  color:#E5BF4A;
+  font-family: "Jost",sans-serif;
+        font-size: 15px;
+}
+.recipe1-flex
+{
+  border: 1px solid rgb(100, 95, 95);
+  
+}
+.recipe2-flex
+{
+  border: 1px solid rgb(100, 95, 95);
+ 
+}
+.follow-text
+{
+    color:white;
+    font-family: "Poiret One", cursive;
+    font-size: 40px;
+    font-weight: 400;
+    margin-left: 530px;
+    padding: 20px;
+}
+.follow-ul
+{
+  display: flex;
+ 
+  justify-content: center;
+  
+}
+
+.loc-icon,.contact-icon
+{
+  font-size: 40px;
+}
+.follow-btn
+{
+  background-color: black;
+  border-color: #E5BF4A;
+  color: #E5BF4A;
+  justify-content: center;
+  align-items: center;
+  margin-left: 640px;
+  width: 180px;
+  height: 60px;
+}
+.cake-pic-ul
+{
+  display: flex;
+  list-style: none;
+  padding: 10px;
+}
+.cake-div-pic
+{
+ 
+  margin-left: 40px;
+  padding: 20px;
+}
+.footer-ul
+{
+  display: flex;
+  color:black;
+  list-style: none;
+  margin-right: 90px;
+  
+}
+.footer-div
+{
+  display: flex;
+  justify-content: space-between;
+}
+.footer-btn-home ,.footer-btn-cake ,.footer-btn-blog ,.footer-btn-contact ,.footer-btn-about
+{
+  color: white;
+  font-family: "Jost",sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  background-color: black;
+  border: none;
+}
+.footer-btn-cake:hover ,.footer-btn-about:hover,.footer-btn-blog:hover ,.footer-btn-home:hover ,.footer-btn-contact:hover
+{
+  color: #E5BF4A;
+  text-decoration:underline;
+  text-decoration-color: #E5BF4A;
+  text-decoration-thickness: 3px;
+}
+.contact-footer
+{
+  display: flex;
+  border: 1px solid  rgb(100, 95, 95);
+  border-left: none;
+  border-right: none;
+  padding: 30px;
+  justify-content: space-between;
+  margin: 20px;
+}
+.social-footer-ul
+{
+  list-style: none;
+  padding: 10px;
+}
+.btn-social-footer 
+{
+  color:white;
+  font-family: "Jost",sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  background-color: black;
+  border-color:white ;
+  width: 180px;
+  height: 60px;
+}
+.btn-social-footer:hover
+{
+  color: #E5BF4A;
+  border-color: #E5BF4A;
+}
+.footer-calling-no
+{
+  color: white;
+  background-color: black;
+  border: none;
+}
+
+.footer-calling-no:hover
+{
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+.contact-footer-para
+{
+  color: white;
+  font-family: "Jost",sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 15px;
+  padding: 10px;
+   margin-left: 10p
+
+}
+.div-loc-footer
+{
+  align-content: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  
+}
+.div-contact-footer
+{
+  align-content: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.last-footer
+{
+  
+  margin-left: 500px;
+  
+}
+@media (max-width: 1000px) {
+  .header-flex {
+      flex-direction: column;
+      align-items: center;
+  }
+ 
+  .header2-flex {
+      /* flex-direction: column; */
+      gap: 10px;
+      justify-content: center;
+  }
+  .bg-cup-text {
+      top: 150px;
+      margin-left: 10px;
+      font-size: 16px;
+      
+  }
+  .order-btn-div {
+      top: 550px;
+      margin-left: 10px;
+  }
+  .schilers-text {
+      font-size: 24px;
+      margin-left: 0;
+      text-align: center;
+      font-weight: bold;
+  }
+  .flex2-txt-img {
+      flex-direction: column;
+      align-items: center;
+      margin: 10px;
+  }
+  .order-cake-flex3 {
+      flex-direction: column;
+      align-items: center;
+      margin: 10px;
+      
+  }
+  .cake-delightful-text ,.cake-delightful-price
+  {
+    font-size: 30px;
+    text-align: center;
+  }
+  .cake-cashmere-text
+ {
+      font-size: 14px;
+      text-align: center;
+  }
+  .cake-cashmere-price
+   {
+      font-size: 14px;
+      text-align: center;
+  }
+  .cake-suprise-price,.cake-suprise-text
+  {
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  .cashmere-btn 
+    {   
+      left: 269px; 
+      top:118.44%;
+      width: 441px;     
+      height: 41px;
+    }   
+    .suprise-btn
+{
+     left: 270px;    
+     height: 41px;
+     top:165.4%;
+     width: 441px;  
+}
+.delightful-btn
+{
+    left: 270px;
+    top:141.44%;
+    width: 441px;   
+     height: 41px;
+}
+  .video-div {
+      padding: 5px;
+  }
+  .video-img {
+      width: 100%;
+      height: auto;
+  }
+  .icon-btn
+  {
+    top: 3990px;
+  }
+  .play-icon
+  {
+    top: 4010px;
+   
+   left: 490px;
+   
+  }
+  .review-flex {
+      flex-direction: column;
+      align-items: center;
+  }
+  .review1,
+  .review2,
+  .review3 {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 10px;
+  }
+  .blog-div {
+      flex-direction: column;
+      align-items: center;
+  
+  }
+  .blog-text
+  {
+    margin-left: 10px;
+  }
+  .blog-btn
+  {
+    margin-left: 50px;
+  }
+  .recipe-flex {
+      flex-direction: column;
+      align-items: center;
+  }
+  .recipe1-flex,
+  .recipe2-flex {
+      margin-top: 10px;
+      padding: 5px;
+      text-align: center;
+  }
+  .follow-text
+  {
+    margin-left: 200px;
+    align-items: center;
+  }
+  .follow-btn
+  {
+    margin-left: 400px;
+  }
+  .cake-div-pic ul {
+      flex-direction: column;
+      align-items: center;
+  }
+  .cake-div-pic ul li {
+      margin-bottom: 10px;
+  }
+  .footer-div {
+      flex-direction: column;
+      align-items: center;
+  }
+  .contact-footer {
+      text-align: center;
+  }
+  .div-loc-footer,
+  .div {
+      text-align: center;
+  }
+  .last-footer
+  {
+    align-items: center;
+    font-size: 26px;
+    margin-left: 10px;
+  }
+}
+
+
