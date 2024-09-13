@@ -281,7 +281,7 @@ body
     }
     .inputs,.textarea{
         background-color: #555;
-        color: white;
+        color: white;  
     }
     .send-button{
         background-color: #bc9864;
@@ -302,3 +302,130 @@ body
     
     
     
+
+
+    
+.contact-footer
+{
+  display: flex;
+  /* border: 1px solid  rgb(100, 95, 95); */
+  border-left: none;
+  border-right: none;
+  padding: 30px;
+  justify-content: space-between;
+  margin: 20px;
+  
+}
+.social-footer-ul
+{
+  list-style: none;
+  padding: 10px;
+  margin-top:20px ;
+  /* position: absolute; */
+}
+.btn-social-footer 
+{
+  color:white;
+  font-family: "Jost",sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  background-color: rgb(69 46 54);
+  /* border-color:white ; */
+  width: 180px;
+  height: 60px;
+}
+.btn-social-footer:hover
+{
+  color: rgb(247, 201, 139);
+  border-color: rgb(247, 201, 139);
+}
+.footer-calling-no
+{
+  color: white;
+  background-color: rgb(69 46 54);
+  border: none;
+}
+
+.footer-calling-no:hover
+{
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+.contact-footer-para
+{
+  color: white;
+  /* font-family: "Jost",sans-serif; */
+  font-family: "quicksand",serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 15px;
+  padding: 10px;
+   margin-left: 10p
+
+}
+.div-loc-footer
+{
+  align-content: center;
+  justify-content: center;
+  /* margin-bottom: 20px; */
+  position: absolute;
+margin-left: 122vh;
+}
+.div-contact-footer
+{
+  /* align-content: center;
+  justify-content: center; */
+  margin-bottom: 100px;
+}
+.last-footer
+{
+  
+  margin-left: 500px;
+  
+}
+
+
+
+.logo2
+    {
+      margin-top:-15vh;
+      height: 25vh;
+      width: 50vh;
+      position: absolute;
+      margin-left: -22px;
+      margin-bottom: 102px;
+
+    }
+    .footer-div{
+     margin-top: 90px;   
+border-bottom: 1px solid  rgb(100, 95, 95);
+    }
+    .footer-ul2 {
+        display: flex;
+        justify-content: right;
+        padding: 0;
+        margin-top: 40px;
+    }
+    .footer-ul2 li {
+        list-style-type: none;
+        margin: 0 10px;
+    }
+    
+    .footer-ul2 a {
+        color: white;
+        font-family: "Jost", sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        background-color: rgb(69, 46, 54);
+        border: none;
+        padding: 10px 20px;
+        text-decoration: none;
+        display: inline-block;
+    }
+    
+    .footer-ul2 a:hover {
+        color: rgb(247, 201, 139);
+        text-decoration: underline;
+        text-decoration-color: rgb(247, 201, 139);
+        text-decoration-thickness: 3px;
+    }
