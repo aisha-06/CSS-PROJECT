@@ -1,0 +1,257 @@
+body
+{
+  background-color: rgb(69 46 54);
+}
+    
+.mode-btn
+{
+  background-color: rgb(69 46 54);
+  color: white;
+  border-color: white;
+  width: 50px;
+  margin: 10px 25px;
+
+ 
+}
+.div-first
+{
+    justify-content: space-between;
+}
+.footer-ul a
+{
+    text-decoration: none;
+}
+    .header-flex
+    {
+        display: flex;
+        margin: 10px;
+        padding: 15px;
+        justify-content: space-between;
+    }
+    .header-item-social
+    {
+        display: flex;
+        color: white;   
+    }
+    .fb
+    {
+        margin: 10px;
+    }
+    .fb-btn
+    {
+        color: white;
+        border-color: rgb(69 46 54);
+        background-color: rgb(69 46 54);
+        border: none;
+       
+ 
+    }
+    .fb-btn:hover
+    {
+       color:rgb(247, 201, 139) ;
+       
+       -webkit-transform:scale(-1);
+       transform:scaleX(-1);
+    
+          
+    }
+    .insta
+    {
+        margin: 10px;
+        color: white;
+        border-color: rgb(69 46 54);
+   
+        border: none;
+        
+
+    }
+    .ig-btn
+    {
+        color: white;
+        border-color: rgb(69 46 54);
+        background-color: rgb(69 46 54);
+        border: none; 
+    }
+    .ig-btn:hover
+    {
+        color:rgb(247, 201, 139);
+        -webkit-transform:scale(-1);
+        transform:scaleX(-1);
+    }
+
+    .X
+    {
+      margin: 10px;
+    }
+    .x-btn
+    {
+        color: white;
+        border-color: rgb(69 46 54);
+        background-color: rgb(69 46 54);
+        border: none;
+    }
+    .x-btn:hover
+    {
+        color:rgb(247, 201, 139);
+        -webkit-transform:scale(-1);
+        transform:scaleX(-1); 
+    }
+    .stick-header
+    {
+      position: sticky; 
+      top: 0%;
+      z-index: 1;
+
+    }
+    .bg-cupcake
+    { 
+      background-size: contain;
+      background-repeat: repeat;  
+    }
+
+    
+    .logo
+    {
+      margin-top: -20px;
+      height: 25vh;
+      width: 50vh;
+    }
+    .header-text
+    {
+        font-family: "Jost", sans-serif ,cursive;
+        font-style:italic;
+        color:rgb(247, 201, 139);        
+    }
+    
+    .btn-call
+   {
+     border-color: rgb(247, 201, 139);
+     background-color: rgb(69 46 54);
+     color: rgb(247, 201, 139);
+     font-family: "Jost",sans-serif;
+   } 
+    .btn-call:hover
+   {
+    color: white;
+    background-color:rgb(247, 201, 139);
+    }
+    .btn-mode-li
+    {
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 20px;
+      
+    }
+
+    
+  .header2-flex
+    {
+        display: flex;
+        gap: 40px;
+        color: white;
+        justify-content: center;
+        position: sticky;
+    }
+    .footer-btn-home ,.footer-btn-cake ,.footer-btn-blog ,.footer-btn-contact ,.footer-btn-about
+{
+  color: white;
+  font-family: "Jost",sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  background-color: rgb(69 46 54);
+  border: none;
+}
+.footer-btn-cake:hover ,.footer-btn-about:hover,.footer-btn-blog:hover ,.footer-btn-home:hover ,.footer-btn-contact:hover
+{
+  color: rgb(247, 201, 139);
+  text-decoration:underline;
+  text-decoration-color: rgb(247, 201, 139);
+  text-decoration-thickness: 3px;
+}
+.about-title span
+{
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Quicksand", sans-serif;
+    letter-spacing: 4px;
+    display: block;
+    margin-bottom: 8px;
+    color: #f45d96;
+}
+.about-title h2
+{
+    font-size: 46px;
+    color: #111111;
+    line-height: 1.4;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 500;
+}
+.about-title-next-para p
+{
+    font-size: 18px;
+    line-height: 30px;
+    font-family: "Quicksand", sans-serif;
+    color: #444444;
+    font-weight: 400;
+}
+.about-video
+{
+    background-image: url("cake-img/video-img.webp");
+    height: 535px;
+    width: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+.btn-play-about
+{
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    border-color: white;
+    margin-left: 380px;
+    margin-top: 230px;
+}
+.play-icon
+{
+    margin-left: 55vh;
+    
+}
+.about-video-next-text span
+{
+    font-family: "Quicksand", sans-serif;
+    color: #f45d96;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 8px;
+}
+.about-video-next-text h2
+{
+    font-family: "Libre Baskerville", serif;
+    color: #111111;
+    font-size: 38px;
+    line-height: 1.4;
+    margin-bottom: 26px;
+}
+.about-title-next-para p
+{
+    font-family: "Quicksand", sans-serif;
+    color: #444444;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+.about-video-next-text
+{
+    background: #ffffff;
+    box-shadow: 0px 10px 21px rgba(99, 134, 137, 0.16);
+    padding: 100px 90px 105px 70px;
+    margin-left: -95px;
+    margin-top: -70px;
+    margin-bottom: 30px;
+}
