@@ -1,11 +1,11 @@
 body
 {
-  background-color: black;
+  background-color: rgb(69 46 54);
 }
     
 .mode-btn
 {
-  background-color: black;
+  background-color: rgb(69 46 54);
   color: white;
   border-color: white;
   width: 50px;
@@ -34,15 +34,15 @@ body
     .fb-btn
     {
         color: white;
-        border-color: black;
-        background-color: black;
+        border-color: rgb(69 46 54);
+        background-color: rgb(69 46 54);
         border: none;
        
  
     }
     .fb-btn:hover
     {
-       color:#E5BF4A ;
+       color:rgb(247, 201, 139) ;
        
        -webkit-transform:scale(-1);
        transform:scaleX(-1);
@@ -52,17 +52,23 @@ body
     .insta
     {
         margin: 10px;
+        color: white;
+        border-color: rgb(69 46 54);
+   
+        border: none;
+        
+
     }
     .ig-btn
     {
         color: white;
-        border-color: black;
-        background-color: black;
+        border-color: rgb(69 46 54);
+        background-color: rgb(69 46 54);
         border: none; 
     }
     .ig-btn:hover
     {
-        color:#E5BF4A ;
+        color:rgb(247, 201, 139);
         -webkit-transform:scale(-1);
         transform:scaleX(-1);
     }
@@ -74,13 +80,13 @@ body
     .x-btn
     {
         color: white;
-        border-color: black;
-        background-color: black;
+        border-color: rgb(69 46 54);
+        background-color: rgb(69 46 54);
         border: none;
     }
     .x-btn:hover
     {
-        color:#E5BF4A ;
+        color:rgb(247, 201, 139);
         -webkit-transform:scale(-1);
         transform:scaleX(-1); 
     }
@@ -106,20 +112,20 @@ body
     {
         font-family: "Jost", sans-serif ,cursive;
         font-style:italic;
-        color:#E5BF4A;        
+        color:rgb(247, 201, 139);        
     }
     
     .btn-call
    {
-     border-color: #E5BF4A;
-     background-color: black;
-     color: #E5BF4A;
+     border-color: rgb(247, 201, 139);
+     background-color: rgb(69 46 54);
+     color: rgb(247, 201, 139);
      font-family: "Jost",sans-serif;
    } 
     .btn-call:hover
    {
     color: white;
-    background-color:#E5BF4A;
+    background-color:rgb(247, 201, 139);
     }
     .btn-mode-li
     {
@@ -142,7 +148,7 @@ body
     {
         color:white;
         position: absolute;
-        top: 350px;
+        top: 400px;
         margin-left: 90px;
         padding-right: 50px;
         font-size: 40px;
@@ -153,7 +159,7 @@ body
     .order-btn-div
     {
         position:absolute;
-        top: 630px;
+        top: 730px;
         
         
     }
@@ -162,8 +168,8 @@ body
     {
     
         color:black;
-        background-color:#E5BF4A;
-        border-color: #E5BF4A;
+        background-color:rgb(247, 201, 139);
+        border-color: rgb(247, 201, 139);
         font-size:large;
         padding-top: 20px;
         padding-left: 40px;
@@ -175,9 +181,9 @@ body
     }
     .order-btn:hover
     {
-      color: #E5BF4A;
-      border-color: #E5BF4A;
-      background-color: black;
+      color: rgb(247, 201, 139);
+      border-color: rgb(247, 201, 139);
+      background-color: rgb(69 46 54);
     }
     .schilers-text
     {
@@ -201,7 +207,7 @@ body
         font-family: "Poiret One", cursive;
         font-size: 20x;
         font-weight: 400;
-        color: #E5BF4A;
+        color: rgb(247, 201, 139);
     }
     .f2-text
     {
@@ -228,7 +234,7 @@ body
     }
     .cake-cashmere-price
     {
-        color: #E5BF4A;
+        color: rgb(247, 201, 139);
         font-family: "Jost",sans-serif;
         font-size: 20px;
         font-weight: 400;
@@ -239,11 +245,11 @@ body
     {
       position: absolute;
       left: 59px;
-      background-color: #E5BF4A;
+      background-color: rgb(247, 201, 139);
       top: 265%;
       height: 41px;
       width: 449px;
-      border-color: #E5BF4A;
+      border-color:rgb(247, 201, 139);
       visibility: hidden; 
        cursor: pointer;
        
@@ -266,7 +272,7 @@ body
     }
     .cake-delightful-price
     {
-        color: #E5BF4A;
+        color: rgb(247, 201, 139);
         font-family: "Jost",sans-serif;
         font-size: 20px;
         font-weight: 400;
@@ -283,10 +289,10 @@ body
     align-content: center;
     top: 265%;
     height: 40px;
-    background-color: #E5BF4A;
-   color: black;
+    background-color: rgb(247, 201, 139);
+   color: rgb(69 46 54);
    width: 450px;
-   border-color:#E5BF4A;
+   border-color:rgb(247, 201, 139);
    visibility: hidden;
    cursor: pointer;
     
@@ -310,7 +316,7 @@ body
 
 .cake-suprise-price
 {
-   color: #E5BF4A;
+   color: rgb(247, 201, 139);
    font-family: "Jost",sans-serif;
    font-size: 20px;
    font-weight: 400;
@@ -325,8 +331,8 @@ body
   justify-content:end;
   align-content:end;
   height: 40px;
-  background-color: #E5BF4A;
-   color: black;
+  background-color: rgb(247, 201, 139);
+   color: rgb(69 46 54);
    width: 450px;
    border-color:#E5BF4A;
    top: 265%;
@@ -340,22 +346,22 @@ body
  }
   .play-icon
   {
-    color:black;
+    color:rgb(69 46 54);
     position: absolute;
     size: 900px;
     justify-content: center;
     align-items: center;
-    top: 2425px;
-    left: 760px;
+    top: 325px;
+    left: 660px;
     width: 100px;
   }
   .icon-btn
   {
     position: absolute;
-    color:#E5BF4A;
-    background-color: #E5BF4A;
+    color:rgb(247, 201, 139);
+    background-color: rgb(247, 201, 139);
     border-radius: 50%;
-    border-color: #E5BF4A;
+    border-color: rgb(247, 201, 139);
     width: 100px;
     height: 100px;
     top:2400px ;
@@ -390,7 +396,7 @@ body
   .review1-star,.review2-star,.review3-star
   {
     display: flex;
-    color: #E5BF4A;
+    color: rgb(247, 201, 139);
     list-style: none; 
   }
   .para-review1
@@ -490,17 +496,17 @@ body
     font-family: "Jost",sans-serif;
     font-size: 18px;
     font-weight: 400;
-    color: black;
-  background-color: #E5BF4A;
-    border-color:#E5BF4A; 
+    color: rgb(69 46 54);
+  background-color: rgb(247, 201, 139);
+    border-color:rgb(247, 201, 139); 
     margin-right: 100px;
   }
 
   .blog-btn:hover
   {
-    color: #E5BF4A;
-    border-color: #E5BF4A;
-    background-color: black;
+    color: rgb(247, 201, 139);
+    border-color: rgb(247, 201, 139);
+    background-color: rgb(69 46 54);
   }
 
 .recipe-flex
@@ -519,7 +525,7 @@ body
 }
 .h3-recipe
 {
-  color:#E5BF4A;
+  color:rgb(247, 201, 139);
   font-family: "Jost",sans-serif;
         font-size: 15px;
 }
@@ -556,9 +562,9 @@ body
 }
 .follow-btn
 {
-  background-color: black;
-  border-color: #E5BF4A;
-  color: #E5BF4A;
+  background-color: rgb(69 46 54);
+  border-color: rgb(247, 201, 139);
+  color: rgb(247, 201, 139);
   justify-content: center;
   align-items: center;
   margin-left: 640px;
@@ -580,7 +586,7 @@ body
 .footer-ul
 {
   display: flex;
-  color:black;
+  color:rgb(69 46 54);
   list-style: none;
   margin-right: 90px;
   
@@ -596,14 +602,14 @@ body
   font-family: "Jost",sans-serif;
   font-size: 15px;
   font-weight: 400;
-  background-color: black;
+  background-color: rgb(69 46 54);
   border: none;
 }
 .footer-btn-cake:hover ,.footer-btn-about:hover,.footer-btn-blog:hover ,.footer-btn-home:hover ,.footer-btn-contact:hover
 {
-  color: #E5BF4A;
+  color: rgb(247, 201, 139);
   text-decoration:underline;
-  text-decoration-color: #E5BF4A;
+  text-decoration-color: rgb(247, 201, 139);
   text-decoration-thickness: 3px;
 }
 .contact-footer
@@ -627,20 +633,20 @@ body
   font-family: "Jost",sans-serif;
   font-size: 15px;
   font-weight: 400;
-  background-color: black;
+  background-color: rgb(69 46 54);
   border-color:white ;
   width: 180px;
   height: 60px;
 }
 .btn-social-footer:hover
 {
-  color: #E5BF4A;
-  border-color: #E5BF4A;
+  color: rgb(247, 201, 139);
+  border-color: rgb(247, 201, 139);
 }
 .footer-calling-no
 {
   color: white;
-  background-color: black;
+  background-color: rgb(69 46 54);
   border: none;
 }
 
@@ -686,7 +692,7 @@ body
   }
  
   .header2-flex {
-      /* flex-direction: column; */
+     
       gap: 10px;
       justify-content: center;
   }
