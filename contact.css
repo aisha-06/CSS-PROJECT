@@ -308,9 +308,10 @@ body
 .contact-footer
 {
   display: flex;
-  /* border: 1px solid  rgb(100, 95, 95); */
+  border: 1px solid  rgb(100, 95, 95);
   border-left: none;
   border-right: none;
+  border-top: none;
   padding: 30px;
   justify-content: space-between;
   margin: 20px;
