@@ -316,6 +316,5 @@ function mode_dark()
 
     return false;
     
-    
-    
 }
+

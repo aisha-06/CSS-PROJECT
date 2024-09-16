@@ -1,0 +1,432 @@
+body
+{
+  background-color: rgb(69 46 54);
+  color: white;
+}
+.logo
+    {
+      margin-top: -20px;
+      height: 25vh;
+      width: 50vh;
+    }
+    
+.mode-btn
+{
+  background-color: rgb(69 46 54);
+  color: white;
+  border-color: white;
+  width: 50px;
+  margin: 10px 25px;
+
+ 
+}
+    .header-flex
+    {
+        display: flex;
+        margin: 10px;
+        padding: 15px;
+        justify-content: space-between;
+    }
+    .header-item-social
+    {
+        display: flex;
+        color: white;   
+    }
+    .fb
+    {
+        margin: 10px;
+    }
+    .fb-btn
+    {
+        color: white;
+        border-color: rgb(69 46 54);
+        background-color: rgb(69 46 54);
+        border: none;
+       
+ 
+    }
+    .fb-btn:hover
+    {
+       color:rgb(247, 201, 139) ;
+       
+       -webkit-transform:scale(-1);
+       transform:scaleX(-1);
+    
+          
+    }
+    .insta
+    {
+        margin: 10px;
+        color: white;
+        border-color: rgb(69 46 54);
+   
+        border: none;
+        
+
+    }
+    .ig-btn
+    {
+        color: white;
+        border-color: rgb(69 46 54);
+        background-color: rgb(69 46 54);
+        border: none; 
+    }
+    .ig-btn:hover
+    {
+        color:rgb(247, 201, 139);
+        -webkit-transform:scale(-1);
+        transform:scaleX(-1);
+    }
+
+    .X
+    {
+      margin: 10px;
+    }
+    .x-btn
+    {
+        color: white;
+        border-color: rgb(69 46 54);
+        background-color: rgb(69 46 54);
+        border: none;
+    }
+    .x-btn:hover
+    {
+        color:rgb(247, 201, 139);
+        -webkit-transform:scale(-1);
+        transform:scaleX(-1); 
+    }
+    .stick-header
+    {
+      position: sticky; 
+      top: 0%;
+      z-index: 1;
+
+    }
+    .bg-cupcake
+    { 
+      background-size: contain;
+      background-repeat: repeat;  
+    }
+
+    .header-item-text
+    {  
+        padding: 10px;
+       
+    }
+    .header-text
+    {
+        font-family: "Jost", sans-serif ,cursive;
+        font-style:italic;
+        color:rgb(247, 201, 139);        
+    }
+    
+    .btn-call
+   {
+     border-color: rgb(247, 201, 139);
+     background-color: rgb(69 46 54);
+     color: rgb(247, 201, 139);
+     /* font-family: "Jost",sans-serif; */
+   } 
+    .btn-call:hover
+   {
+    color: white;
+    background-color:rgb(247, 201, 139);
+    }
+    .btn-mode-li
+    {
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 20px;
+      
+    }
+/* 
+    
+  .header2-flex
+    {
+        display: flex;
+        gap: 40px;
+        color: white;
+        justify-content: center;
+        position: sticky;
+    } */
+   
+    
+    .footer-ul {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .footer-ul li {
+        list-style-type: none;
+        margin: 0 10px;
+    }
+    
+    .footer-ul a {
+        color: white;
+        font-family: "Jost", sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        background-color: rgb(69, 46, 54);
+        border: none;
+        padding: 10px 20px;
+        text-decoration: none;
+        display: inline-block;
+    }
+    
+    .footer-ul a:hover {
+        color: rgb(247, 201, 139);
+        text-decoration: underline;
+        text-decoration-color: rgb(247, 201, 139);
+        text-decoration-thickness: 3px;
+    }
+
+
+
+   
+    /* .heading1{
+        text-align: center;
+        text-transform: capitalize;
+        margin-top: 80px;
+        font-size: 28px;
+    } */
+    
+    .div1{
+        background-color:#bc9864;
+        width: 75px;
+        height: 70px;
+        border-radius: 50%;
+    }
+    .div2{
+        background-color:#bc9864;
+        width: 75px;
+        height: 70px;
+        border-radius: 50%;
+    }
+    .div3{
+        background-color:#bc9864;
+        width: 75px;
+        height: 70px;
+        border-radius: 50%;
+    }
+    .flex-container{
+        display: flex;
+        justify-content: center;
+        margin-top: 70px;
+        gap:260px
+    }
+    .flex-container2{
+        display: flex;
+        justify-content: center;
+        gap:310px;
+        font-size: 25px;
+        margin-top: -49px;
+        color: black;
+    }
+    .Address h3{
+        color: #bc9864;
+        font-family: "Playfair Display", serif;
+        font-weight: 300;
+    }
+    .Phoneno h3{
+        color: #bc9864;
+      font-family: "Playfair Display", serif;
+      font-weight: 300;
+    }
+    .emailid h3{
+        color: #bc9864;
+        font-family: "Playfair Display", serif;
+       font-weight: 300;   
+    }
+    .flex-container3{
+        display: flex;
+        justify-content: center;
+        gap:299px;
+        margin-top: 20px;
+    }
+    .Address{
+        position: absolute;
+        margin-left: -600px;
+        font-family:"Playfair Display", serif ;
+    }
+    .Phoneno{
+        position: absolute;
+        margin-left:70px;
+    }
+    .emailid{
+        position: absolute;
+        margin-left: 850px;
+       font-family: "Playfair Display", serif;
+    }
+    .get-in-touch{
+        font-size: 18px;
+        text-transform: capitalize;
+        margin-top: 200px;
+        text-align: center;
+    }
+    .form{
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    }
+    .inputs,.send-button,.textarea{
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: none;
+        height: 30px;
+    }
+    .inputs,.textarea{
+        background-color: #555;
+        color: white;  
+    }
+    .send-button{
+        background-color: #bc9864;
+        color:white;
+        height: 75px;
+        font-size: medium;
+        border-radius: 15px;
+    }
+    .send-button:hover{
+        background-color:#E0A75E;
+    }
+
+   #name, #email, #password , #confirmpassword,#phonenumber,#subject,#message
+  {
+        height: 50px;
+        border-radius: 15px;
+    }
+    
+    
+    
+
+
+    
+.contact-footer
+{
+  display: flex;
+  border: 1px solid  rgb(100, 95, 95);
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  padding: 30px;
+  justify-content: space-between;
+  margin: 20px;
+  
+}
+.social-footer-ul
+{
+  list-style: none;
+  padding: 10px;
+  margin-top:20px ;
+  /* position: absolute; */
+}
+.btn-social-footer 
+{
+  color:white;
+  font-family: "Jost",sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  background-color: rgb(69 46 54);
+  /* border-color:white ; */
+  width: 180px;
+  height: 60px;
+}
+.btn-social-footer:hover
+{
+  color: rgb(247, 201, 139);
+  border-color: rgb(247, 201, 139);
+}
+.footer-calling-no
+{
+  color: white;
+  background-color: rgb(69 46 54);
+  border: none;
+}
+
+.footer-calling-no:hover
+{
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+.contact-footer-para
+{
+  color: white;
+  /* font-family: "Jost",sans-serif; */
+  font-family: "quicksand",serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 15px;
+  padding: 10px;
+   margin-left: 10p
+
+}
+.div-loc-footer
+{
+  align-content: center;
+  justify-content: center;
+  /* margin-bottom: 20px; */
+  position: absolute;
+margin-left: 122vh;
+}
+.div-contact-footer
+{
+  /* align-content: center;
+  justify-content: center; */
+  margin-bottom: 100px;
+}
+.last-footer
+{
+  
+  margin-left: 500px;
+  
+}
+
+
+
+.logo2
+    {
+      margin-top:-15vh;
+      height: 25vh;
+      width: 50vh;
+      position: absolute;
+      margin-left: -22px;
+      margin-bottom: 102px;
+
+    }
+    .footer-div{
+     margin-top: 90px;   
+border-bottom: 1px solid  rgb(100, 95, 95);
+    }
+    .footer-ul2 {
+        display: flex;
+        justify-content: right;
+        padding: 0;
+        margin-top: 40px;
+    }
+    .footer-ul2 li {
+        list-style-type: none;
+        margin: 0 10px;
+    }
+    
+    .footer-ul2 a {
+        color: white;
+        font-family: "Jost", sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        background-color: rgb(69, 46, 54);
+        border: none;
+        padding: 10px 20px;
+        text-decoration: none;
+        display: inline-block;
+    }
+    
+    .footer-ul2 a:hover {
+        color: rgb(247, 201, 139);
+        text-decoration: underline;
+        text-decoration-color: rgb(247, 201, 139);
+        text-decoration-thickness: 3px;
+    }
