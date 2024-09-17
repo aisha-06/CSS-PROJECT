@@ -214,12 +214,12 @@ body
         display: flex;
         justify-content: center;
         margin-top: 70px;
-        gap:260px
+        gap:200px
     }
     .flex-container2{
         display: flex;
         justify-content: center;
-        gap:310px;
+        gap:250px;
         font-size: 25px;
         margin-top: -49px;
         color: black;
@@ -247,7 +247,7 @@ body
     }
     .Address{
         position: absolute;
-        margin-left: -600px;
+        margin-left: -400px;
         font-family:"Playfair Display", serif ;
     }
     .Phoneno{
@@ -256,7 +256,7 @@ body
     }
     .emailid{
         position: absolute;
-        margin-left: 850px;
+        margin-left: 700px;
        font-family: "Playfair Display", serif;
     }
     .get-in-touch{
@@ -389,8 +389,8 @@ margin-left: 122vh;
 
 .logo2
     {
-      margin-top:-15vh;
-      height: 25vh;
+      margin-top:-11vh;
+      height: 20vh;
       width: 50vh;
       position: absolute;
       margin-left: -22px;
