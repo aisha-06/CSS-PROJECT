@@ -1,6 +1,9 @@
 body
 {
   background-color: rgb(69 46 54);
+  padding: 40px;
+  overflow-x: hidden;
+  font-family: "Jost", sans-serif ,cursive;
 }
     
 .mode-btn
@@ -172,36 +175,35 @@ body
 {
     font-size: 16px;
     font-weight: 700;
-    font-family: "Quicksand", sans-serif;
+    font-family: "Jost", sans-serif ,cursive;
     letter-spacing: 4px;
     display: block;
     margin-bottom: 8px;
-    color: #f45d96;
+    color: rgb(247, 201, 139);
 }
 .about-title h2
 {
     font-size: 46px;
-    color: #111111;
+    color: white;
     line-height: 1.4;
-    font-family: "Libre Baskerville", serif;
+    font-family: "Jost", sans-serif ,cursive;
     font-weight: 500;
 }
 .about-title-next-para p
 {
     font-size: 18px;
     line-height: 30px;
-    font-family: "Quicksand", sans-serif;
-    color: #444444;
+    font-family: "Jost", sans-serif ,cursive;
+    color: white;
     font-weight: 400;
 }
 .about-video
 {
-    background-image: url("cake-img/video-img.webp");
-    height: 535px;
-    width: 500px;
+    background-image: url("cake-img/blog\ 1.jpeg");
+    height: 635px;
+    width: 800px;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top center;
+    background-position: top left;
 }
 .btn-play-about
 {
@@ -211,17 +213,17 @@ body
     background-color: white;
     border-color: white;
     margin-left: 380px;
-    margin-top: 230px;
+    margin-top: 260px;
 }
 .play-icon
 {
-    margin-left: 55vh;
-    
+    margin-left: 55vh; 
 }
+    
 .about-video-next-text span
 {
-    font-family: "Quicksand", sans-serif;
-    color: #f45d96;
+    font-family: "Jost", sans-serif ,cursive;
+    color: rgb(247, 201, 139);;
     font-size: 16px;
     font-weight: 700;
     letter-spacing: 4px;
@@ -229,18 +231,26 @@ body
     display: block;
     margin-bottom: 8px;
 }
-.about-video-next-text h2
+.about-video-next-text h2 
 {
-    font-family: "Libre Baskerville", serif;
-    color: #111111;
-    font-size: 38px;
+    font-family: "Jost", sans-serif ,cursive;
+    color:white;
+    font-size: 28px;
     line-height: 1.4;
     margin-bottom: 26px;
 }
+.about-video-next-text p
+{
+    font-family: "Jost", sans-serif ,cursive;
+    color:white;
+    font-size: 18px;
+    
+    
+}
 .about-title-next-para p
 {
-    font-family: "Quicksand", sans-serif;
-    color: #444444;
+    font-family: "Jost", sans-serif ,cursive;
+    color: white;
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
@@ -248,10 +258,248 @@ body
 }
 .about-video-next-text
 {
-    background: #ffffff;
-    box-shadow: 0px 10px 21px rgba(99, 134, 137, 0.16);
-    padding: 100px 90px 105px 70px;
-    margin-left: -95px;
-    margin-top: -70px;
+    background: rgb(79 46 60);
+    box-shadow: 10px 10px 21px rgba(99, 134, 137, 0.16);
+    padding: 100px 90px 140px 70px;
+    margin-left: 700px;
+    margin-top: -95vh;
     margin-bottom: 30px;
+    margin-right: 15vh;
+}
+.btn-shop-bg-img
+{
+    width: 80px;
+    height: 40px;
+    font-size: 12px;
+
+}
+.conatct-btn a 
+{
+    font-weight: bold;
+    width: 180px;
+    text-decoration: none;
+    color: white;
+}
+.btn-shop-bg-img {
+    border-radius: 40px;
+    width: 150px;
+    height: 50px;
+    font-family: "Jost", sans-serif ,cursive;
+    font-size: 18px;
+    font-weight: 300;
+    color: white;
+    background-color: rgb(247, 201, 139);
+    border-color: rgb(247, 201, 139);
+}
+
+.view-btn-div .white-btn
+{
+    width: 170px;
+    height: 60px;
+    border-color: #f45d96;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+    margin-left: 350px;
+
+
+}
+.blog-item
+{
+    box-shadow: 0px 10px 21px rgba(99, 133, 136, 16);
+    margin: 10px;
+    background-color: rgb(79 46 60);  
+    border:rgb(79 46 60); 
+    
+    
+}
+.blog-item-text
+{
+    text-align: center;
+    position: relative;
+    padding: 38px 35px 30px;
+}
+.blog-item-text .label
+{
+    position: absolute;
+    left: 0;
+    top: -13px;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.blog-item-text .label span {
+    color: #ffffff;
+    background: #111111;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 4px 10px 2px;
+    transition: all, 0.3;
+}
+.blog-item-text h4 a 
+{
+    color: white;
+    line-height: 31px;
+    text-decoration: none;
+    background-color: transparent;
+}
+.blog-item-text p
+{
+    color: white;
+    
+   
+}
+.blog-item-text span
+{
+    color: white;
+    
+   
+}
+.blog-item-text:hover .label span
+{
+  background-color:rgb(247, 201, 139);
+}
+.blog-item-text:hover a
+{
+    text-decoration: underline;
+    text-decoration-color:white;
+}
+.florist-trick-section
+{
+    margin-top: 40vh;
+}
+.blog-img
+{
+    height: 400px;
+    width: 455px;
+}
+.card-body
+{
+    color: white;
+    font-size: 26px;
+   
+}
+.card
+{
+ border: 4px solid white;
+ display: flex;
+ padding: 10px;
+}
+.card-img-top
+{
+    height: 500px;
+}
+.card-img-bottom
+{
+    height: 500px;
+
+}
+.footer-ul
+{
+  display: flex;
+  color:rgb(69 46 54);
+  list-style: none;
+  margin-right: 90px;
+  margin-top: 15vh;
+  
+}
+  
+.footer-ul a
+{
+    text-decoration: none;
+    color: white;
+}
+.footer-div
+{
+  display: flex;
+  justify-content: space-between;
+}
+.footer-btn-home ,.footer-btn-cake ,.footer-btn-blog ,.footer-btn-contact ,.footer-btn-about
+{
+  color: white;
+  font-family: "Jost",sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  background-color: rgb(69 46 54);
+  border: none;
+}
+.footer-btn-cake:hover ,.footer-btn-about:hover,.footer-btn-blog:hover ,.footer-btn-home:hover ,.footer-btn-contact:hover
+{
+  color: rgb(247, 201, 139);
+  text-decoration:underline;
+  text-decoration-color: rgb(247, 201, 139);
+  text-decoration-thickness: 3px;
+}
+.contact-footer
+{
+  display: flex;
+  border: 1px solid  rgb(100, 95, 95);
+  border-left: none;
+  border-right: none;
+  padding: 30px;
+  justify-content: space-between;
+  margin: 20px;
+}
+.social-footer-ul
+{
+  list-style: none;
+  padding: 10px;
+}
+.btn-social-footer 
+{
+  color:white;
+  font-family: "Jost",sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  background-color: rgb(69 46 54);
+  border-color:white ;
+  width: 180px;
+  height: 60px;
+}
+.btn-social-footer:hover
+{
+  color: rgb(247, 201, 139);
+  border-color: rgb(247, 201, 139);
+}
+.footer-calling-no
+{
+  color: white;
+  background-color: rgb(69 46 54);
+  border: none;
+}
+
+.footer-calling-no:hover
+{
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+.contact-footer-para
+{
+  color: white;
+  font-family: "Jost",sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 15px;
+  padding: 10px;
+   margin-left: 10p
+
+}
+.div-loc-footer
+{
+  align-content: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  
+}
+.div-contact-footer
+{
+  align-content: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.last-footer
+{
+  
+  margin-left: 500px;
+  
 }
