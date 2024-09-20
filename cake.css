@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(69 46 54);
+    background-color: rgb(69 46 54) !important;
     overflow-x: hidden;
     width: 100%;
     height: 100%;
@@ -128,9 +128,10 @@ button.toggle-button {
     margin-left: 200px;
 }
 .disc{
-    color: black;
+    color: white;
     font-family: "Poppins", sans-serif;
     font-size: 40px;
+    font-weight: 500;
     margin-bottom: 50px;
 }
 .carousel-inner{
@@ -145,5 +146,159 @@ button.toggle-button {
     margin-bottom: 50px;
 }
 .offer img{
-    width: 600px;
+    width: 574px;
+    cursor: pointer;
+}
+.recommended{
+    margin-left: 200px;
+}
+.recom-product {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto;
+    gap: 30px;
+    margin-top: 1px;
+    margin-left: -100px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.recom-product img {
+    height: 463px;
+    width: auto;
+    display: block;
+    border-radius: 2.5%;
+}
+.image-container {
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform var(--duration-long) ease-in-out, box-shadow var(--duration-long) ease-in-out;
+    transform-origin: center;
+}
+.image-container:hover {
+    transform: scale(1.0) rotate(2deg); 
+    box-shadow: 0px 8px 20px rgba(204, 166, 166, 0.3);
+    border: 2px solid gray;
+    border-radius: 2.5%;
+}
+.root {
+    --duration-long: 50s; 
+}
+#tag{
+    position: absolute;
+    color: rgb(101, 31, 31);
+    font-family: "Lobster", sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    background-color: rgb(252, 205, 139);
+    margin-top: -448px;
+    margin-left: 210px;
+    padding: 1px 24px;
+    cursor: pointer;
+}
+#tag-best{
+    position: absolute;
+    color: rgb(101, 31, 31);
+    font-family: "Lobster", sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    background-color: rgb(252, 205, 139);
+    margin-top: -448px;
+    margin-left: 281px;
+    padding: 1px 24px;
+    cursor: pointer;
+}
+.hover-btn{
+    font-size: 24px;
+}
+.price {
+    display: inline-block;
+    transition: transform 0.3s ease, opacity 0.3s ease; 
+}
+#text1{
+    color: rgb(229, 161, 161);
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 26px;
+    text-align: left;
+    margin-left: 20px;
+}
+.image-container:hover #text1{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.ratings{
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    gap: 10px;
+    margin-left: -10px;
+    color: goldenrod;
+}
+.ratings p{
+    color: white;
+    font-size: 20px;
+    letter-spacing: -1px;
+    margin-top: -4px;
+}
+#actual-price{
+    font-family: "Poppins", sans-serif;
+    color: rgb(181, 181, 181);
+    letter-spacing: 2px;
+}
+#offer-price{
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 2px;
+    color: white;
+}
+#text2{
+    color: rgba(252, 221, 150, 0.789);
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 10px;
+    text-align: center;
+    border: 1px solid rgb(60, 19, 19);
+    border-radius: 8px;
+    background-color: rgb(60, 19, 19);
+    padding: 2px;
+}
+.recom-product button{
+    border: 2px solid rgb(209, 159, 159);
+    border-radius: 50px;
+    color: rgb(255, 255, 255);
+    font-family: "Poppins"sans-serif;
+    font-size: 25px;
+    background-color: transparent;
+    padding: 20px 145px;
+    margin-left: 27px;
+    margin-bottom: 50px;
+}
+.recom-product button:hover{
+    border: 2px solid rgb(255, 218, 218);
+}
+.view-btn{
+    text-align: center;
+    margin-bottom: 50px;
+}
+:root {
+    --duration-long: 0.6s; 
+}
+.view-btn button{
+    color: rgb(60, 19, 19);
+    font-family: "Poppins", sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    background-color: rgb(247, 201, 139);
+    border-radius: 50px;
+    text-align: center;
+    padding: 15px 50px;
+    transition: transform var(--duration-long) ease-in-out, box-shadow var(--duration-long) ease-in-out;
+    transform-origin: center;
+}
+.view-btn button:hover{
+    transform: scale(1.1); 
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
 }
