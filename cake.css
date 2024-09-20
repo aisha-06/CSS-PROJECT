@@ -175,9 +175,19 @@ button.toggle-button {
     cursor: pointer;
     transition: transform var(--duration-long) ease-in-out, box-shadow var(--duration-long) ease-in-out;
     transform-origin: center;
+    overflow: hidden; 
+    width: fit-content; 
+}
+.image-container img {
+    width: 100%; 
+    transition: transform var(--duration-long) ease-in-out; 
+    transform-origin: center; 
+}
+.image-container:hover img {
+    transform: scale(1.1); 
 }
 .image-container:hover {
-    transform: scale(1.0) rotate(2deg); 
+    transform: rotate(2deg); 
     box-shadow: 0px 8px 20px rgba(204, 166, 166, 0.3);
     border: 2px solid gray;
     border-radius: 2.5%;
@@ -195,6 +205,19 @@ button.toggle-button {
     margin-top: -448px;
     margin-left: 210px;
     padding: 1px 24px;
+    cursor: pointer;
+}
+#sale-tag{
+    position: absolute;
+    color: rgb(252, 205, 139);
+    font-family: "Poppins", sans-serif;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: rgb(101, 31, 31);
+    margin-top: -50px;
+    margin-left: 17px;
+    padding: 2px 20px;
     cursor: pointer;
 }
 #tag-best{
@@ -219,9 +242,9 @@ button.toggle-button {
 #text1{
     color: rgb(229, 161, 161);
     font-family: "Poppins", sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
-    margin-top: 26px;
+    margin-top: 50px;
     text-align: left;
     margin-left: 20px;
 }
@@ -301,4 +324,37 @@ button.toggle-button {
 .view-btn button:hover{
     transform: scale(1.1); 
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+.cruffins{
+    margin-left: 200px;
+}
+.fam-cruffin {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto;
+    gap: 30px;
+    margin-top: 1px;
+    margin-left: -100px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.fam-cruffin img {
+    height: 463px;
+    width: auto;
+    display: block;
+    border-radius: 2.5%;
+}
+.fam-cruffin button{
+    border: 2px solid rgb(209, 159, 159);
+    border-radius: 50px;
+    color: rgb(255, 255, 255);
+    font-family: "Poppins"sans-serif;
+    font-size: 25px;
+    background-color: transparent;
+    padding: 20px 145px;
+    margin-left: 27px;
+    margin-bottom: 50px;
+}
+.fam-cruffin button:hover{
+    border: 2px solid rgb(255, 218, 218);
 }
