@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page </title>
+    <link rel="stylesheet" href= "cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        function updateQuantity(button, change) {
+    let quantityElement = button.parentElement.querySelector(".quantity");
+    let currentQuantity = parseInt(quantityElement.textContent);
+    let newQuantity = currentQuantity + change;
+
+    if (newQuantity > 0) {
+        quantityElement.textContent = newQuantity;
+
+        // Update total for this product
+        let priceElement = button.parentElement.previousElementSibling;
+        let price = parseInt(priceElement.textContent);
+        let totalElement = button.parentElement.nextElementSibling;
+        totalElement.textContent = price * newQuantity;
+
+        // Update grand total
+        updateGrandTotal();
+    }
+}
+
+function updateGrandTotal() {
+    let totalElements = document.querySelectorAll(".total");
+    let grandTotal = 0;
+    totalElements.forEach(function (element) {
+        grandTotal += parseInt(element.textContent);
+    });
+    document.getElementById("grand-total").textContent = grandTotal;
+}
+    </script>
+</head>
+<body class="body" >
+    <!-- <form onsubmit="return mode_light()" onreset="return mode_dark()"  > -->
+     <!-- <form > -->
+         <div class="header-flex">
+             <div class="header-item-social">
+                 <div class="fb">
+                     <button class="fb-btn">
+                         <i class="fa-brands fa-facebook"></i>
+                     </button>
+                 </div> 
+                 <div class="insta">
+                     <button class="ig-btn">
+                         <i class="fa-brands fa-instagram"></i>
+                     </button>
+                 </div>
+                 <div class="X">
+                     <button class="x-btn">
+                         <i class="fa-brands fa-twitter"></i>
+                     </button>
+                 </div>
+             </div>
+             <div class="header-item-text"> <img src="cake-img/logo.png" alt="logo" class="logo"></div>
+ 
+             <div class="header-item-no">
+                 <button class="btn-call">
+                     <h4 class="header-callus-text">
+                         CALL US :+10 783 346 4378
+                     </h4>
+                 <!-- </button>
+                 <div class="btn-mode-div" style="display: flex;" style="margin-right: 15px;">
+                     <button class="mode-btn light-btn" type="submit" >
+                         <i class="fas fa-sun" style="font-size: 30px;" style="margin-right: 100px ;"></i>
+                         
+                       </button> -->
+                     <!-- <button class="mode-btn" type="reset">
+                         <i class="fa-solid fa-moon"  style="font-size: 30px;"></i>
+                     </button> -->
+                 </div>
+             </div>
+         </div>
+         <div class="stick-header" style="background-color: rgb(69 46 54);">
+
+             <div class="header2-flex">
+                 <ul class="footer-ul">
+                     <li><a href="index.html" class="footer-btn-home">HOME</a></li>
+                     <li><a href="cake.html" class="footer-btn-cake">CAKES</a></li>
+                     <li><a href="about.html" class="footer-btn-about">ABOUT</a></li>
+                     <li><a href="blog.html" class="footer-btn-blog">BLOG</a></li>
+                     <li><a href="contact.html" class="footer-btn-contact">CONTACT</a></li>
+                     <li><a href="cart.html" class="footer-btn-cart">CART</a></li>
+                 </ul>
+             </div>
+         </div>
+         <h1>Your Cart</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody id="cart-items">
+            <tr>
+                <td>Product 1</td>
+                <td class="price">500</td>
+                <td>
+                    <button onclick="updateQuantity(this, -1)">-</button>
+                    <span class="quantity">1</span>
+                    <button onclick="updateQuantity(this, 1)">+</button>
+                </td>
+                <td class="total">500</td>
+            </tr>
+            <tr>
+                <td>Product 2</td>
+                <td class="price">300</td>
+                <td>
+                    <button onclick="updateQuantity(this, -1)">-</button>
+                    <span class="quantity">1</span>
+                    <button onclick="updateQuantity(this, 1)">+</button>
+                </td>
+                <td class="total">300</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="grand-total">
+        Grand Total: <span id="grand-total">800</span>
+    </div>
+
+     
+         </body>
+         </html>
