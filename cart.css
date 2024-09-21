@@ -198,3 +198,40 @@ body
         margin-top: 20px;
         font-size: 20px;
     }
+    table, th, td {
+        border: 3px solid burlywood;
+        padding: 10px;
+        text-align: center;
+    }
+    table {
+        width:150vh; /* Isko kam ya zyada kar sakte hain */
+        margin-left: 190px;
+        margin-top: 50px;
+      
+    }
+    table td:first-child {
+        width: 350px; /* First column ki width ko 300px kar diya */
+    }
+    
+    table th:first-child {
+        width: 350px; /* First column header ki width */
+    }
+    thead th {
+        font-family: "Quicksand", sans-serif;
+        font-weight: 300;
+        letter-spacing: 2px;
+        font-style: normal;
+        font-size: 25px;
+        color: burlywood;
+    }
+    .price ,.total{
+        color: blanchedalmond;
+    }
+    .quantity{
+        color: blanchedalmond;
+    }
+    button{
+    background-color: blanchedalmond;
+    box-shadow: 2px;
+    border-color: blanchedalmond;
+    }

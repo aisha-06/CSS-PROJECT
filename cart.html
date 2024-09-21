@@ -12,6 +12,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <script>
   function updateQuantity(button, change) {
     let quantityElement = button.parentElement.querySelector(".quantity");
@@ -96,8 +100,8 @@ function updateGrandTotal() {
              </div>
          </div>
        
-         <h1>Your Cart</h1>
-         <table>
+         <h1 style=" color:  #bc9864;"><b>Your Cart </b></h1>
+         <table >
              <thead>
                  <tr>
                      <th>Product</th>
@@ -108,51 +112,61 @@ function updateGrandTotal() {
              </thead>
              <tbody id="cart-items">
                  <tr>
-                     <td>Product 1</td>
-                     <td class="price">500</td>
+                     <td> <img src = "cake-img/MangoCruffin30.avif" style=" width: 150px ; margin-left:-170px; margin-bottom: 50px; margin-top: 10px;">
+                      <p style=" color:  #bc9864;  position:absolute; margin-left: 18px; margin-top: -30px;"><b> Mango Cruffin ( Pack Of 4 ) </b></p></td>
+                     <td class="price">379</td>
                      <td>
                          <button onclick="updateQuantity(this, -1)">-</button>
                          <span class="quantity">1</span>
                          <button onclick="updateQuantity(this, 1)">+</button>
                      </td>
-                     <td class="total">500</td>
+                     <td class="total">379</td>
                  </tr>
                  <tr>
-                     <td>Product 2</td>
-                     <td class="price">300</td>
+                     <td><img src = "cake-img/cruffinsetof6_2.webp"  style=" width: 150px; margin-left: -170px; margin-top: 10px; margin-bottom: 50px;"> 
+                        <p style=" color:  #bc9864;  position:absolute; margin-left: 18px; margin-top: -30px;"><b> Assorted Cruffin ( Pack Of 6 ) </b></p>
+                    </td>
+                     <td class="price">749</td>
                      <td>
                          <button onclick="updateQuantity(this, -1)">-</button>
                          <span class="quantity">1</span>
                          <button onclick="updateQuantity(this, 1)">+</button>
                      </td>
-                     <td class="total">300</td>
+                     <td class="total">749 </td>
                  </tr>
 
                  <tr>
-                    <td>Product 1</td>
-                    <td class="price">500</td>
+                    <td> <img src = "cake-img/biscoff"  style=" width: 150px; margin-left: -170px; margin-top: 10px; margin-bottom: 50px;"> 
+                        <p style=" color:  #bc9864;  position:absolute; margin-left: 18px; margin-top: -30px;"><b> Lotus Biscoff Cruffin ( Pack Of 4 ) </b></p>
+
+                    </td>
+                    <td class="price">399</td>
                     <td>
                         <button onclick="updateQuantity(this, -1)">-</button>
                         <span class="quantity">1</span>
                         <button onclick="updateQuantity(this, 1)">+</button>
                     </td>
-                    <td class="total">500</td>
+                    <td class="total">399</td>
                 </tr>
                 <tr>
-                    <td>Product 1</td>
-                    <td class="price">500</td>
+                    <td>
+                        <img src = "cake-img/epic walnut brownies"  style=" width: 150px; margin-left: -170px; margin-top: 10px; margin-bottom: 50px;"> 
+                        <p style=" color:  #bc9864;  position:absolute; margin-left: 18px; margin-top: -30px;"><b> Epic Walnut Brownie ( Pack Of 4 ) </b></p>
+
+                    </td>
+                    <td class="price">399</td>
                     <td>
                         <button onclick="updateQuantity(this, -1)">-</button>
                         <span class="quantity">1</span>
                         <button onclick="updateQuantity(this, 1)">+</button>
                     </td>
-                    <td class="total">500</td>
+                    <td class="total">399</td>
                 </tr>
              </tbody>
          </table>
      
          <div class="grand-total">
-             Grand Total: <span id="grand-total">800</span>
+             Grand Total: <span id="grand-total">1926</span>
          </div>
          </body>
          </html>
