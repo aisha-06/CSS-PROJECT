@@ -12,8 +12,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script>
-  function updateQuantity(button, change) {
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<script>
+function updateQuantity(button, change) {
     let quantityElement = button.parentElement.querySelector(".quantity");
     let currentQuantity = parseInt(quantityElement.textContent);
     let newQuantity = currentQuantity + change;
@@ -23,11 +31,11 @@
 
         // Update total for this product
         let priceElement = button.parentElement.previousElementSibling;
-        let price = parseInt(priceElement.textContent);
+        let price = parseInt(priceElement.textContent.replace('₹', '').trim());  // Remove ₹ and convert to integer
         let totalElement = button.parentElement.nextElementSibling;
-        totalElement.textContent = price * newQuantity;
+        totalElement.textContent = '₹' + (price * newQuantity); // Add ₹ symbol
 
-        // Update grand total
+        // Update subtotal and grand total
         updateGrandTotal();
     }
 }
@@ -36,11 +44,15 @@ function updateGrandTotal() {
     let totalElements = document.querySelectorAll(".total");
     let grandTotal = 0;
     totalElements.forEach(function (element) {
-        grandTotal += parseInt(element.textContent);
+        grandTotal += parseInt(element.textContent.replace('₹', '').trim()); // Remove ₹ and add to grand total
     });
-    document.getElementById("grand-total").textContent = grandTotal;
+
+    // Update Subtotal and Total display
+    document.getElementById("subtotal").textContent = '₹' + grandTotal;
+    document.getElementById("total").textContent = '₹' + grandTotal;
 }
-   </script>
+
+ </script>
 </head>
 <body class="body" >
     <!-- <form onsubmit="return mode_light()" onreset="return mode_dark()"  > -->
@@ -96,8 +108,11 @@ function updateGrandTotal() {
              </div>
          </div>
        
-         <h1>Your Cart</h1>
-         <table>
+         <h1 style=" color:  #bc9864;  letter-spacing: 3px; text-transform: capitalize; font-family: Libre Baskerville,sans-serif; margin-top: 40px;"><b>Your Cart </b></h1>
+         <span class="material-symbols-outlined">
+            shopping_cart
+            </span>
+         <table >
              <thead>
                  <tr>
                      <th>Product</th>
@@ -108,51 +123,170 @@ function updateGrandTotal() {
              </thead>
              <tbody id="cart-items">
                  <tr>
-                     <td>Product 1</td>
-                     <td class="price">500</td>
+                     <td> <img src = "cake-img/MangoCruffin30.avif" style=" width: 150px ; margin-left:-7px; margin-bottom: 50px; margin-top: 10px;">
+                      <p style=" color:  #bc9864;  position:absolute; margin-left: 58px; margin-top: -30px;"><b> Mango Cruffin ( Pack Of 4 ) </b></p></td>
+                     <td class="price"> ₹379</td>
                      <td>
                          <button onclick="updateQuantity(this, -1)">-</button>
                          <span class="quantity">1</span>
                          <button onclick="updateQuantity(this, 1)">+</button>
                      </td>
-                     <td class="total">500</td>
+                     <td class="total"> ₹379</td>
                  </tr>
                  <tr>
-                     <td>Product 2</td>
-                     <td class="price">300</td>
+                     <td><img src = "cake-img/cruffinsetof6_2.webp"  style=" width: 150px; margin-left: -7px; margin-top: 10px; margin-bottom: 50px;"> 
+                        <p style=" color:  #bc9864;  position:absolute; margin-left: 58px; margin-top: -30px;"><b> Assorted Cruffin ( Pack Of 6 ) </b></p>
+                    </td>
+                     <td class="price"> ₹749</td>
                      <td>
                          <button onclick="updateQuantity(this, -1)">-</button>
                          <span class="quantity">1</span>
                          <button onclick="updateQuantity(this, 1)">+</button>
                      </td>
-                     <td class="total">300</td>
+                     <td class="total"> ₹749 </td>
                  </tr>
 
                  <tr>
-                    <td>Product 1</td>
-                    <td class="price">500</td>
+                    <td> <img src = "cake-img/biscoff"  style=" width: 150px; margin-left: -7px; margin-top: 10px; margin-bottom: 50px;"> 
+                        <p style=" color:  #bc9864;  position:absolute; margin-left: 38px; margin-top: -30px;"><b> Lotus Biscoff Cruffin ( Pack Of 4 ) </b></p>
+
+                    </td>
+                    <td class="price"> ₹399</td>
                     <td>
                         <button onclick="updateQuantity(this, -1)">-</button>
                         <span class="quantity">1</span>
                         <button onclick="updateQuantity(this, 1)">+</button>
                     </td>
-                    <td class="total">500</td>
+                    <td class="total"> ₹399</td>
                 </tr>
                 <tr>
-                    <td>Product 1</td>
-                    <td class="price">500</td>
+                    <td>
+                        <img src = "cake-img/epic walnut brownies"  style=" width: 150px; margin-left: -7px; margin-top: 10px; margin-bottom: 50px;"> 
+                        <p style=" color:  #bc9864;  position:absolute; margin-left: 38px; margin-top: -30px;"><b> Epic Walnut Brownie ( Pack Of 4 ) </b></p>
+
+                    </td>
+                    <td class="price"> ₹399</td>
                     <td>
                         <button onclick="updateQuantity(this, -1)">-</button>
                         <span class="quantity">1</span>
                         <button onclick="updateQuantity(this, 1)">+</button>
                     </td>
-                    <td class="total">500</td>
+                    <td class="total"> ₹399</td>
                 </tr>
              </tbody>
          </table>
-     
-         <div class="grand-total">
-             Grand Total: <span id="grand-total">800</span>
-         </div>
+         <!-- <div class="grand-total" style="position: absolute; margin-left: 80%; margin-top: 3%;">
+        <p style="margin: 20px; position: absolute; font-family: Quicksand,serif; font-weight: 800; color:whitesmoke; font-size: larger;">Grand Total:</p>
+         <span id="grand-total" style=" font-family: Quicksand ,serif; font-weight: 800; position: absolute; color: whitesmoke; margin-left: -23px; margin-top: 50px; font-size: larger;"> ₹ 1926</span>
+         </div> -->
+
+         <div class="cart-summary">
+            <h3>Cart Total</h3>
+            <div class="cart">
+            
+            <p>Subtotal: 
+                <span id="subtotal">₹ 1926 </span> </p>                   
+            <p >Total: <span id="total">₹ 1926 </span></p>
+            </div>
+            <button id="checkout-btn">Proceed to Checkout</button>
+        </div>
+        
+
+        <div class="coupon-section">
+            <p>Enter coupon. It will be applied at checkout</p>
+            <div class="coupon-input">
+                <input type="text" id="coupon-code" placeholder="Your code here">
+                <button id="apply-coupon">APPLY</button>
+            </div>
+        </div>
+
+        <section class="continue-clear-update-cart">
+            <div class="cart-continue">
+              <i class="fa-solid fa-reply"></i>
+              <a href="#">CONTINUE SHOPPING </a>
+            </div>
+            <div class="delete">
+              <i class="fa-solid fa-trash-can"></i>
+              <a href="#"> CLEAR SHOPPING CART</a>
+            </div> 
+            <div class="update-cart">
+              <i class="fa-solid fa-spinner"></i>
+              <a href="#">  UPDATE CART</a>
+            </div>  
+          </section>
+
+
+
+          <div class="footer-div">
+            <div>
+            <img src="cake-img/logo.png" alt="logo" style="margin-left: 70px ;" class="logo2">
+   
+            </div>
+             <div>
+               <ul class="footer-ul2">
+                   <li><a href="index.html" style="margin: 10px;" class="footer-btn-home">HOME</a></li>    
+                   <li><a href="cake.html" style="margin: 10px;" class="footer-btn-cake">CAKES</a></li>
+                   <li><a href="about.html" style="margin: 10px;" class="footer-btn-about">ABOUT </a></li>
+                   <li><a href="blog.html"style="margin: 10px;" class="footer-btn-blog">BLOG</a></li>
+                   <li><a href="contact.html" style="margin: 10px;" class="footer-btn-contact">CONTACT</a></li>
+
+               </ul>
+             </div>
+       </div>
+      </section>
+   <section>
+       <div class="contact-footer">
+           <div class="">
+                <p class="contact-footer-para">
+                   It will be possible to obtain a degree in education, but I will give it to them in  <br>the same time as with great effort and pain.  For to come to my mind,<br>
+                   Who should practice any kind of work except that some advantage may result from it?
+                </p>
+                <ul class="social-footer-ul" >
+                 <button style="margin: 10px;" class="btn-social-footer">
+                         <li ><i class="fa-brands fa-facebook"  ></i>
+                                   Facebook
+                        </li>
+                   </button>
+                             
+                       <button style="margin: 10px;" class="btn-social-footer footer2">
+                             <li><i class="fa-brands fa-instagram"  ></i>
+                                Instagram
+                              </li>
+                           </button>
+                           
+                            
+                       <button style="margin: 10px;" style="padding: 10px;" class="btn-social-footer footer3">
+                               <li  ><i class="fa-brands fa-twitter"  ></i>
+                                  Twitter
+                               </li>
+                       </button>                                                     
+                </ul>
+           </div>
+           <div class="div-loc-footer">
+               <i class="fa-solid fa-location-arrow loc-icon" style="color: white;"  ></i> 
+               <h2 style=" color: #bc9864;" style="font-family: Poiret One" , cursive;>Location</h2>
+               <h3 style="color:white" style="font-family: Poiret One"  , cursive; class="loc-text">Sugar Town ,cakeville <br>Dreamland 45678</h3> 
+           </div>
+           <div class="div-contact-footer">
+               <i class="fa-solid fa-phone contact-icon" style="color: white;"  style="font-size: 40px;"></i>
+               <h2 style=" color: #bc9864;" style="font-family: Poiret One" , cursive;>Contact</h2>
+               <h3 style="color :white" style="font-family: Poiret One" , cursive; class="contact-text"> 
+                   <button class="footer-calling-no">
+                    <b>+1 234 567 8901</b>
+   
+                   </button><br>
+                
+                   LayeerdLuxxes23@gmail.com</h3>
+           </div>
+       </div>
+   </section>
+   <div class="last-footer" >
+       <h4 style="color:white;" style="font-family: Poiret One" , cursive; class="last-footer-text" >
+          Copyright © 2024 All rights reserved | This template is made with 
+          <i class="fa-solid fa-heart heart" style="color: #bc9864;"> </i> by Zubiya!
+       </h4>
+   </div> 
+        
          </body>
          </html>
+         </script>

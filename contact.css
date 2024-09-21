@@ -357,13 +357,14 @@ body
 .contact-footer-para
 {
   color: white;
-  /* font-family: "Jost",sans-serif; */
-  font-family: "quicksand",serif;
+  font-family: "Jost",sans-serif;
+  /* font-family: "Quicksand",sans-serif; */
   font-size: 20px;
   font-weight: 400;
-  margin: 15px;
-  padding: 10px;
-   margin-left: 10p
+  margin-left: -15px;
+  /* padding: 10px; */
+  /* font-weight:800; */
+  
 
 }
 .div-loc-footer
