@@ -390,3 +390,115 @@ button.toggle-button {
 .tea-cakes button:hover{
     border: 2px solid rgb(255, 218, 218);
 }
+.cookies{
+    margin-left: 204px;
+}
+.cookie-product {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+    gap: 30px;
+    margin-top: 1px;
+    justify-content: left;
+    margin-bottom: 10px;
+}
+.cookie-product img {
+    height: 463px;
+    width: auto;
+    display: block;
+    border-radius: 2.5%;
+}
+.cookie-product button{
+    border: 2px solid rgb(209, 159, 159);
+    border-radius: 50px;
+    color: rgb(255, 255, 255);
+    font-family: "Poppins"sans-serif;
+    font-size: 25px;
+    background-color: transparent;
+    padding: 20px 145px;
+    margin-left: 27px;
+    margin-bottom: 50px;
+}
+.cookie-product button:hover{
+    border: 2px solid rgb(255, 218, 218);
+}
+.footer-logo img{
+    position: relative;
+    height: 370px;
+}
+.footer-btn{
+    display: flex;
+    list-style-type: none;
+    z-index: 1000;  
+    justify-content: right;
+    margin-top: -220px;
+    margin-right: 150px;
+}
+.footer-btn button{
+    justify-content: space-between;
+    border: 10px solid transparent;
+    padding: 0px;
+    color: aliceblue;
+    cursor: pointer;
+    background-color: transparent;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    list-style-type: none;
+    justify-content: center;
+    text-transform: uppercase;
+    margin-left: 39px;
+}
+.footer-btn button:hover{
+    color: burlywood;
+    text-decoration: underline;
+    text-underline-offset: 14px;
+    text-decoration-color: burlywood;
+    text-decoration-thickness: 3px;
+}
+.contact{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    border: 1px solid rgba(135, 110, 110, 0.67);
+    border-right: none;
+    border-left: none;
+    margin-top: 180px;
+    position: relative;
+    margin-left: 160px;
+    margin-right: 150px;
+}
+.social-btns{
+    position: relative;
+    color: aliceblue;
+}
+.social-btns p{
+    font-family: "Poppins", sans-serif;
+}
+.social-btns button{
+    color: aliceblue;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    border: 2px solid aliceblue;
+    border-top: 2px solid rgb(209, 159, 159);
+    border-left: 2px solid rgb(209, 159, 159);
+    border-right: 2px solid rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
+    background-color: transparent;
+    padding: 20px 50px;
+    margin-right: 25px;
+}
+.social-btns button:hover{
+    border: 2px solid rgb(209, 159, 159);
+    border-bottom: 2px solid rgb(209, 159, 159);    
+    border-right: 2px solid rgb(209, 159, 159);
+    border-left: 2px solid rgb(255, 255, 255);
+    border-top: 2px solid rgb(255, 255, 255);
+    background-color: rgba(115, 85, 97, 0.059);
+}
+.calling:hover{
+    text-decoration: underline;
+}
+.location p{
+    font-family: "Poppins", sans-serif;
+}
