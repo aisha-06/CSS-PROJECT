@@ -40,20 +40,6 @@ body{
     margin-bottom: -45px;
     display: block;
 }
-button.toggle-button {
-    position: absolute;
-    margin: 20px;
-    padding: 4px 11px;
-    font-size: 25px;
-    color: black !important;
-    border: 1px solid #333333;
-    border-radius: 50%;
-    cursor: pointer;
-    outline: none;
-    color: inherit;
-    margin-left: 1811px;
-    margin-top: 46px;
-  }
 .call{
     height: 46px;
     margin-left: 441px;
@@ -195,13 +181,6 @@ button.toggle-button {
 .root {
     --duration-long: 50s; 
 }
-#price-offer{
-    display: flex; 
-    flex-direction: row; 
-    list-style-type: none; 
-    gap: 20px; 
-    margin-left: -8px;
-}
 #tag{
     position: absolute;
     color: rgb(101, 31, 31);
@@ -274,8 +253,6 @@ button.toggle-button {
     margin-top: -4px;
 }
 #actual-price{
-    text-decoration: line-through; 
-    font-size: 20px;
     font-family: "Poppins", sans-serif;
     color: rgb(181, 181, 181);
     letter-spacing: 2px;
@@ -548,87 +525,43 @@ button.toggle-button {
     body {
         overflow-x: hidden;
     }
+
     .header-1 {
-        flex-direction: row;
-        padding: 10px; 
+        flex-direction: column; /* Stack header elements vertically */
+        padding: 20px; /* Reduce padding */
     }
 
     .top-header-1 {
-        flex-direction: row; 
-        gap: 10px;
-        margin-left: 50px;
+        flex-direction: column; /* Stack items in top header */
+        gap: 10px; /* Reduce gap between items */
     }
 
     .fab, .ins, .twit {
-        font-size: 30px; 
-        margin-top: 130px; 
+        font-size: 18px; /* Reduce font size */
+        margin-top: 20px; /* Adjust margin */
     }
 
     #img {
-        margin-left: 0;
+        margin-left: 0; /* Center image */
         margin-top: 0; 
     }
 
     .header-2 {
-        flex-direction: column;
-        gap: 0px;
+        flex-direction: column; /* Stack header-2 items vertically */
+        gap: 10px; /* Adjust gap */
     }
 
     .header-2 li {
         margin: 5px 0; /* Adjust margins for list items */
     }
 
-    .header-2 button{
-        font-size: 33px;
+    .offer, .recom-product, .fam-cruffin, .tea-cakes, .cookie-product {
+        grid-template-columns: repeat(2, 1fr); /* Reduce columns for smaller screens */
     }
 
-    .carousel-inner{
-        height: 10px;
-    }
-    
-    .discount, .recom-product, .recommended{
-        margin-left: 50px;
-    }
-
-    .disc{
-        font-size: 70px;
-    }
-
-    .offer{
-        grid-template-columns: auto;
-    }
-
-    .offer img{
-        height: 150px;
-        margin-bottom: 30px;
-    }
-
-    .recom-product{
-        margin-left: 190px;
-        grid-template-columns: auto auto;
-        grid-template-rows: auto;
-        gap: 540px;
-    }
-
-    #text1, #text2{
-        font-size: 40px;
-    }
-
-    #actual-price{
-        font-size: 40px;
-    }
-
-    .ratings{
-        font-size: 40px;
-    }
-
-    .ratings p{
-        font-size: 40px;
-    }
-
-    .image-container img{
-        height: 500px;
-        width: auto;
+    .offer img, .recom-product img, .fam-cruffin img, .tea-cakes img, .cookie-product img {
+        width: 100%; /* Make images responsive */
+        height: auto; /* Maintain aspect ratio */
     }
 
     .footer-btn {
