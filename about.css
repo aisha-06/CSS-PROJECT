@@ -276,3 +276,108 @@ body{
     margin-top: 10px;
     cursor: default;
 }
+.footer-logo img{
+    position: relative;
+    height: 370px;
+}
+.footer-btn{
+    display: flex;
+    list-style-type: none;
+    z-index: 1000;  
+    justify-content: right;
+    margin-top: -220px;
+    margin-right: 150px;
+}
+.footer-btn button{
+    justify-content: space-between;
+    border: 10px solid transparent;
+    padding: 0px;
+    color: aliceblue;
+    cursor: pointer;
+    background-color: transparent;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    list-style-type: none;
+    justify-content: center;
+    text-transform: uppercase;
+    margin-left: 39px;
+}
+.footer-btn button:hover{
+    color: burlywood;
+    text-decoration: underline;
+    text-underline-offset: 14px;
+    text-decoration-color: burlywood;
+    text-decoration-thickness: 3px;
+}
+.contact{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    border: 1px solid rgba(135, 110, 110, 0.67);
+    border-right: none;
+    border-left: none;
+    margin-top: 180px;
+    position: relative;
+    margin-left: 160px;
+    margin-right: 150px;
+}
+.social-btns{
+    position: relative;
+    color: aliceblue;
+}
+.social-btns p{
+    font-family: "Poppins", sans-serif;
+}
+.social-btns button{
+    color: aliceblue;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    border: 2px solid aliceblue;
+    border-top: 2px solid rgb(209, 159, 159);
+    border-left: 2px solid rgb(209, 159, 159);
+    border-right: 2px solid rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
+    background-color: transparent;
+    padding: 20px 50px;
+    margin-right: 25px;
+}
+.social-btns button:hover{
+    border: 2px solid rgb(209, 159, 159);
+    border-bottom: 2px solid rgb(209, 159, 159);    
+    border-right: 2px solid rgb(209, 159, 159);
+    border-left: 2px solid rgb(255, 255, 255);
+    border-top: 2px solid rgb(255, 255, 255);
+    background-color: rgba(115, 85, 97, 0.059);
+}
+.calling:hover{
+    text-decoration: underline;
+}
+.location p{
+    font-family: "Poppins", sans-serif;
+}
+.copyright{
+    color: white;
+    font-family: "Jost", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top: 116px;
+}
+.heart{
+    color: palevioletred;
+}
+#colorlib{
+    color: rgb(249, 205, 211);
+}
+.up {
+  position: fixed;
+  bottom: 70px; 
+  right: 70px; 
+  border: 1px solid gold;
+  background-color: #E5BF4A;
+  border-radius: 50%;
+  padding: 25px;
+  font-size: 70px;
+  z-index: 1000; 
+}
